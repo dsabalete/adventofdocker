@@ -1,0 +1,39 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - SECRET_MESSAGE=Hello Docker!
+      - PORT=8080
+    volumes:
+      - mydata:/data
+    networks:
+      - myapp-network
+    depends_on:
+      - db
+  db:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=myapp
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - myapp-network
+  nginx:
+    image: nginx
+    ports:
+      - "80:80"
+    networks:
+      - myapp-network
+    depends_on:
+      - api
+volumes:
+  mydata:
+  postgres_data:
+networks:
+  myapp-network:
