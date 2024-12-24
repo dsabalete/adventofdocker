@@ -15,9 +15,8 @@
 | 16  | Introduction to DockerHub             | [Link](./day16) |
 | 17  | Introduction to Github Actions        | [Link](./day17) |
 | 18  | Deploying Docker to the Cloud         | [Link](./day18) |
-| 19  | Description for Day 19                | [Link](./day19) |
-| 20  | Description for Day 20                | [Link](./day20) |
-| 21  | Description for Day 21                | [Link](./day21) |
-| 22  | Description for Day 22                | [Link](./day22) |
-| 23  | Description for Day 23                | [Link](./day23) |
+| 19  | Limiting Container Resources          | [Link](./day19) |
+| 20  | Docker Security Best Practices        | [Link](./day20) |
+| 21  | Orchestrators                         | [Link](./day21) |
+| 23  | Resources                             | [Link](./day23) |
 | 24  | Description for Day 24                | [Link](./day24) |
