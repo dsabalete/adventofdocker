@@ -1,5 +1,7 @@
 # Advent of Docker 2024
 
+This repository contains the code and challenges for the [Advent of Docker 2024](https://adventofdocker.com).
+
 | Day | Challenge Description                 | Link            |
 | --- | ------------------------------------- | --------------- |
 | 4   | Building your first container         | [Link](./day4)  |
